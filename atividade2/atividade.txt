@@ -1,0 +1,23 @@
+1a- Os valores são: I-39 e J-40
+
+b-  x terá o valor 3.
+    y terá o valor 4.
+    O valor apontado por p será 4
+
+
+2a-o erro está na atribuição de p = x, onde há a falta do * para indicar ponteiro;
+o segundo erro está no printf na quebra de linha;
+
+b- primeiro erro na linha int *temp; // Não precisa ser um ponteiro, pois ele não está recebendo um endereço e mias tarde no código na linha 
+*temp = *i eu tento acessar o endereço de *temp, que não foi definido, isso resultará em erro;
+
+c-O primeiro erro está na linha if (&a==&b), onde o correto seria acessar os valores e não os endereços de memória;
+segundo erro, para comparar strings em C/C++, você deve usar funções de comparação de strings, como strcmp em C ou o operador == em C++, logo 
+na linha a < b novamente o que será comparado é o endereço de memória dos dois ponteiros.
+
+
+
+3- 3; 10; 4; Esses são os valores dos membros item de cada nó da lista encadeada representada pelo array v, 
+e eles serão impressos na ordem em que o loop os percorre, o loop se encerrou ao encontrar o valor NULL no elemento v[1].
+
+

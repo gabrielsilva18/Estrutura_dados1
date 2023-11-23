@@ -1,0 +1,24 @@
+Interpretação com base no codigo: No *n1=(No*)malloc(sizeof(No));
+
+*OBS:Quando você aloca memória usando malloc, a função malloc retorna um tipo especial de ponteiro chamado void*. 
+Esse tipo é genérico e pode apontar para qualquer tipo de dado. 
+No entanto, antes de usar essa memória alocada, você geralmente precisa dizer ao compilador qual tipo de dados ela vai armazenar.
+
+
+1- No *n1: Isso declara uma variável chamada n1 que é um ponteiro para uma estrutura do tipo No;
+2- =(No*) => Como citado anteriormente, o malloc retorna um ponterio genérico, do tipo void, 
+esse trecho de códigotem o objetivo de 'dizer' que o ponterio apontará especificamente para uma estrutura do tipo NO;
+3-malloc(sizeof(No)) => este trecho de código é responsável por guardar uma quantidade de espaço na memória, para uma estrutura NO.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+O operador -> em C++ é usado para acessar membros de uma estrutura ou classe através de um ponteiro para essa estrutura ou classe. 
+ex:
+
+n1->item = 1;
+n1->prox = n2;
+
+Isso significa que n1 é um ponteiro para uma estrutura No, e o -> é usado para acessar os membros dessa estrutura através do ponteiro n1. Portanto:
+
+    n1->item = 1; atribui o valor 1 ao membro item da estrutura apontada por n1.
+    n1->prox = n2; atribui o valor do ponteiro n2 ao membro prox da estrutura apontada por n1.

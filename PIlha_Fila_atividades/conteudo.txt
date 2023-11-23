@@ -1,0 +1,34 @@
+Pilhas também chamadas de stacks;
+Filas também chamadas de queue;
+
+#São implementadas como vetores, o que muda é a forma de acesso a seus itens;
+*O que difere uma pilha de uma fila é o mecanismo responsável pelo armazenamento e recuperamento de seus elementos;
+*enquanto a pilha segue o principio do FIFO(primeiro que entra e o primeiro que sai) a fila obedece ao LIFO(ultimo que entra e o primeiro que sai)
+
+ANALOGIAS: PILHA: pilha de pratos; ultimo prato que entra(entra no topo), é o primeiro que sai;
+FILA: FIla de um mercado;fila de um mercado o primeiro que chega na fila é liberado mais rápido;
+
+*Em ambas as operações para mostrar o elemento, tem caráter destrutivo, ou seja, ele e removido depois;
+
+--------------------------------PILHASSS----------------------------
+
+ALGUMAS OPERAÇÕES:
+
+PilhaPush(s,x) -> Insere um item X no topo da pilha S;
+PilhaPop(s) -> Retorna e remove o elemento no topo da pilha, ou seja, o ultimo que entrou com o push ou de outra maneira;
+PilhaInicializa(s) -> cria uma pilha vazia S;
+PilhaCheia(s) -> Testa se a pilha S esta cheia;
+PilhaVazia(s) -> Testa se a pilha está vazia;
+
+USOS de Pilha:
+-Chamada de Subfunções;
+-Implementação de recursividade;
+-Funcionamento da chamada de funções;
+
+
+
+--------------------------FILASSSSSS---------------------------
+*Nas filas precisamos criar ponteiros para manipular os elementos do topo e do final;
+-Exemplo em computação: Fila de impressão;
+*Elementos são inseridos no final da fila;
+*Elementos são retirados no inicio;
